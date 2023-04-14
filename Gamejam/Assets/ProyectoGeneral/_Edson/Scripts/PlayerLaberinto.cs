@@ -18,8 +18,8 @@ public class PlayerLaberinto : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //rb.velocity = new Vector2(horizontal * speed, vertical*speed);
-        aceleration();
+        rb.velocity = new Vector2(horizontal * speed, vertical*speed);
+       // Aceleration();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -35,7 +35,7 @@ public class PlayerLaberinto : MonoBehaviour
         }
     }
 
-    private void aceleration()
+    private void Aceleration()
     {
         rb.velocity += (Vector2.right * (horizontal * speed * Time.fixedDeltaTime));
 
