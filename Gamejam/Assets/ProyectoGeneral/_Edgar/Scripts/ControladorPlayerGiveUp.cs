@@ -20,6 +20,10 @@ public class ControladorPlayerGiveUp : MonoBehaviour
     
     [SerializeField]private bool _enSuelo = false;
     private bool _salto = false;
+
+    [Header("Animacion")]
+    public Animator AnimatorPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
