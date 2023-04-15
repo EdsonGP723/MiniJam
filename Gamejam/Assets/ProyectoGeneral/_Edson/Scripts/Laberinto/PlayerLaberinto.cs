@@ -8,18 +8,23 @@ public class PlayerLaberinto : MonoBehaviour
     private float vertical;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float speed;
+    [SerializeField] private Animator anim;
 
     // Update is called once per frame
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+       
+        /*if (horizontal == -1)
+        {
+            anim.SetBool("Left", true);
+        }*/
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontal * speed, vertical*speed);
-       // Aceleration();
+        rb.velocity = new Vector2(horizontal * speed, vertical*speed);      
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -35,24 +40,5 @@ public class PlayerLaberinto : MonoBehaviour
         }
     }
 
-    private void Aceleration()
-    {
-        rb.velocity += (Vector2.right * (horizontal * speed * Time.fixedDeltaTime));
-
-        if (horizontal == 0 && rb.velocity != Vector2.zero)
-        {
-            var x = rb.velocity.x;
-            var sign = Mathf.Sign(x);
-            rb.velocity -= (Vector2.right * ((speed * sign) * Time.fixedDeltaTime));
-        }
-
-        rb.velocity += (Vector2.up * (vertical * speed * Time.fixedDeltaTime));
-
-        if (vertical == 0 && rb.velocity != Vector2.zero)
-        {
-            var y = rb.velocity.y;
-            var sign = Mathf.Sign(y);
-            rb.velocity -= (Vector2.up * ((speed * sign) * Time.fixedDeltaTime));
-        }
-    }
+    
 }
