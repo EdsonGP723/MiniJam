@@ -158,7 +158,7 @@ MonoBehaviour:
   - {fileID: 6864418286034502650, guid: 9ffa656654ff982409dab3c8aefb83b3, type: 3}
   - {fileID: 1072714941390822272, guid: 2117bfbb3e080644d9e37135db9f0dfe, type: 3}
   Spawn: {fileID: 132525285}
-  interval: 0.8
+  interval: 0.5
 --- !u!4 &132525285
 Transform:
   m_ObjectHideFlags: 0
