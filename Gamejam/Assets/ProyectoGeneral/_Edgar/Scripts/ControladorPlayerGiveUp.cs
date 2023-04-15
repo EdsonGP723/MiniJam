@@ -35,6 +35,8 @@ public class ControladorPlayerGiveUp : MonoBehaviour
     {
         _MovimientoHorizontal = Input.GetAxis("Horizontal") * _velocidadMovimiento;
 
+        AnimatorPlayer.SetFloat("Horizontal",Mathf.Abs(_MovimientoHorizontal));
+
         if (Input.GetButtonDown("Jump"))
         {
             _salto = true;
@@ -44,6 +46,8 @@ public class ControladorPlayerGiveUp : MonoBehaviour
     void FixedUpdate()
     {
         _enSuelo = Physics2D.OverlapBox(_controladorSuelo.position,_dimensionesCaja,0f,_queEsSuelo);
+
+        AnimatorPlayer.SetBool("enSuelo",_enSuelo);
 
         Mover(_MovimientoHorizontal*Time.fixedDeltaTime,_salto);
 
