@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ProyectoGeneral/_Edson/Scenes/Laberinto.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/ProyectoGeneral/_Edson/Scenes/FlappyShip.unity
+    guid: c2072d604b9584a44beda0dfd949dadc
   m_configObjects: {}
