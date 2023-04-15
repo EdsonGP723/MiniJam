@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerLaberinto : MonoBehaviour
 {
@@ -8,18 +9,15 @@ public class PlayerLaberinto : MonoBehaviour
     private float vertical;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float speed;
-    [SerializeField] private Animator anim;
+   // [SerializeField] private Animator anim;
 
     // Update is called once per frame
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
-       
-        /*if (horizontal == -1)
-        {
-            anim.SetBool("Left", true);
-        }*/
+
+    
     }
 
     private void FixedUpdate()
