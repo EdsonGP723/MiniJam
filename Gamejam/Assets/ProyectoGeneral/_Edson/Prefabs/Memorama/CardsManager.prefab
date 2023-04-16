@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3312368606966400130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3312368606966400128}
+  - component: {fileID: 3312368606966400131}
+  m_Layer: 0
+  m_Name: CardsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3312368606966400128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3312368606966400130}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 994.2802, y: 555.4439, z: -20.765318}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3312368606966400131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3312368606966400130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc59e6ac2c76d74e8d6d2a64de3af8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  C1: 0
+  C2: 0
+  C3: 0
+  C1c: 0
+  C2c: 0
+  C3c: 0
+  Positions:
+  - {fileID: 0}
+  Layouts:
+  - {fileID: 7858554448624584545, guid: 8767ebe7e3a6c064e81135543f92a274, type: 3}
+  - {fileID: 4534250537562429285, guid: d93ab30cfdba5fd40a6b578dbe048624, type: 3}
+  - {fileID: 5848819131304296496, guid: 94ee4e6f8731f3e48999e15db1a4b2bc, type: 3}
+  Card1: {fileID: 6552975193915435293, guid: eef0b0fe14032b44e998b56a6413f6bd, type: 3}
+  Card2: {fileID: 6799058462350867528, guid: bc44b2be2a8a1a542931d8b98c115ad5, type: 3}
+  Card3: {fileID: 4084765995688962241, guid: 9c2ecc6043c2db94c9b56956eb5d0f7d, type: 3}
+  Card1c: {fileID: 413017592570539688, guid: c8bfba468a264e246a83ee7e900dff60, type: 3}
+  Card2c: {fileID: 8197837916497086774, guid: a03ea97a900afeb488536f9c2f28d33b, type: 3}
+  Card3c: {fileID: 7283014714580052619, guid: 2f955f2a475c74a419b309373532f087, type: 3}
+  CB1: {fileID: 413017592570539670, guid: c8bfba468a264e246a83ee7e900dff60, type: 3}
+  CB2: {fileID: 6799058462350867534, guid: bc44b2be2a8a1a542931d8b98c115ad5, type: 3}
+  CB3: {fileID: 4084765995688962243, guid: 9c2ecc6043c2db94c9b56956eb5d0f7d, type: 3}
+  CB1c: {fileID: 413017592570539670, guid: c8bfba468a264e246a83ee7e900dff60, type: 3}
+  CB2c: {fileID: 8197837916497086772, guid: a03ea97a900afeb488536f9c2f28d33b, type: 3}
+  CB3c: {fileID: 7283014714580052617, guid: 2f955f2a475c74a419b309373532f087, type: 3}

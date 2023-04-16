@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FlappyController : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class FlappyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        
         Vector3 mouseWorldPosition = _camera.ScreenToWorldPoint(Input.mousePosition);
         mouseWorldPosition.z = 0;
         transform.position = mouseWorldPosition;
@@ -16,9 +19,11 @@ public class FlappyController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        var SceneManager = FindObjectOfType<SceneController>();
         if (collision.CompareTag("Asteroid"))
         {
-            Destroy(this.gameObject);
+            SceneManager.GetComponent<SceneController>().ScenesLod();
+            this.gameObject.SetActive(false); 
         }
     }
 }
