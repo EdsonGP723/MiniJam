@@ -11,6 +11,16 @@ public class SceneController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+    }
+
+    public void Salir()
+    {
+        Application.Quit();
+    }
+
+    public void CambioEscena()
+    {
         SceneManager.LoadScene(Scenes[Random.Range(0,4)]);
     }
 }
