@@ -18,6 +18,6 @@ public class SceneController : MonoBehaviour
 
     public void CambioEscena()
     {
-        SceneManager.LoadScene(Scenes[Random.Range(0,4)]);
+        SceneManager.LoadScene(Scenes[Random.Range(0,Scenes.Length)]);
     }
 }

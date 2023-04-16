@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SIgNivel : MonoBehaviour
 {
     public string NombreEscena;
-    private int _contadorNave;
+   [SerializeField] private int _contadorNave;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,13 +25,6 @@ public class SIgNivel : MonoBehaviour
         {
             SceneManager.LoadScene(NombreEscena);
         }
-        if (collision.CompareTag("nave"))
-        {
-            _contadorNave++;
-            if (_contadorNave == 3)
-            {
-                SceneManager.LoadScene(NombreEscena);
-            }
-        }
+       
     }
 }

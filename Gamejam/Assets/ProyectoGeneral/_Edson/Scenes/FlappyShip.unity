@@ -230,6 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 132525285}
   - component: {fileID: 132525284}
+  - component: {fileID: 132525286}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -252,8 +253,8 @@ MonoBehaviour:
   Asteroids:
   - {fileID: 7578449096462519462, guid: ff219dee76f50e549a8c77e2ca8ae31b, type: 3}
   - {fileID: 5209066909440656800, guid: 385f3375efc10de489bc38a6bdd55fe2, type: 3}
-  - {fileID: 6864418286034502650, guid: 9ffa656654ff982409dab3c8aefb83b3, type: 3}
-  - {fileID: 1072714941390822272, guid: 2117bfbb3e080644d9e37135db9f0dfe, type: 3}
+  - {fileID: 7540973723818706360, guid: aaf6219d9681bad458b999fcee400cad, type: 3}
+  - {fileID: 8842305329498155573, guid: bd7965c2f5a9d284ebecabcc50239557, type: 3}
   Spawn: {fileID: 132525285}
   interval: 0.5
 --- !u!4 &132525285
@@ -271,6 +272,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &132525286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132525283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54f425025be8a543a51765a3c797a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scenes: 00000000
 --- !u!1 &542015982
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,7 +727,7 @@ GameObject:
   - component: {fileID: 1989818890}
   m_Layer: 0
   m_Name: Player
-  m_TagString: nave
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -731,6 +745,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 542015984}
+  _contadorNave: 0
+  NombreEscena: Laberinto
 --- !u!50 &1989818891
 Rigidbody2D:
   serializedVersion: 4
@@ -762,7 +778,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0060096965, y: -0.024035897}
