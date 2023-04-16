@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6864418286034502650, guid: 9ffa656654ff982409dab3c8aefb83b3, type: 3}
       propertyPath: m_Name
-      value: Asteroids3
+      value: Asteroids3 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7938423875821464265, guid: 9ffa656654ff982409dab3c8aefb83b3, type: 3}
       propertyPath: m_RootOrder
@@ -62,6 +62,10 @@ PrefabInstance:
     - target: {fileID: 7938423875821464265, guid: 9ffa656654ff982409dab3c8aefb83b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9002192085470645640, guid: 9ffa656654ff982409dab3c8aefb83b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ffa656654ff982409dab3c8aefb83b3, type: 3}
