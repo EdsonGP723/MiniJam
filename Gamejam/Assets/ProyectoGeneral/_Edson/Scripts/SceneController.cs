@@ -6,10 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneController : MonoBehaviour
 {
     public int[] Scenes;
-    
-
-    // Update is called once per frame
-    void Update()
+    public void ScenesLod()
     {
         
     }

@@ -15,9 +15,11 @@ EditorBuildSettings:
     path: Assets/ProyectoGeneral/_Edson/Scenes/FlappyShip.unity
     guid: c2072d604b9584a44beda0dfd949dadc
   - enabled: 1
+
     path: Assets/ProyectoGeneral/_Edgar/Scenes/memorama.unity
     guid: 260286d5d707f7945ae39acc48fc6ce3
   - enabled: 1
     path: Assets/ProyectoGeneral/_Edgar/Scenes/give up.unity
     guid: 03999ffc2a2ea9247b91762dc04acdd0
+
   m_configObjects: {}
