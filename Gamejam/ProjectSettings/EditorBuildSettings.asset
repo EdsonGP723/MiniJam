@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ProyectoGeneral/_Edson/Scenes/memorama.unity
     guid: 260286d5d707f7945ae39acc48fc6ce3
+  - enabled: 1
+    path: Assets/ProyectoGeneral/_Edgar/Scenes/Final.unity
+    guid: 9ec4b8b6c64c31d4da97e03167094f3c
   m_configObjects: {}
