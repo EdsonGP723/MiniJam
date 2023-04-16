@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SIgNivel : MonoBehaviour
 {
     public string NombreEscena;
-   [SerializeField] private int _contadorNave;
+    private int _contadorNave;
     // Start is called before the first frame update
     void Start()
     {

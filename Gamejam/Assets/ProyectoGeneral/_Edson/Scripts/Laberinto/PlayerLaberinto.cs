@@ -41,6 +41,8 @@ public class PlayerLaberinto : MonoBehaviour
     {
         if (collision.CompareTag("Walls"))
         {
+            var gameover = GetComponent<SceneController>();
+            gameover.CambioEscena();
             Destroy(this.gameObject);
         }
 

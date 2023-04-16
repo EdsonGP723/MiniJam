@@ -137,9 +137,10 @@ GameObject:
   - component: {fileID: 233359212}
   - component: {fileID: 233359210}
   - component: {fileID: 233359216}
+  - component: {fileID: 233359217}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,8 +194,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.009088039, y: 0.029414654}
-  m_Size: {x: 0.3730712, y: 0.50542355}
+  m_Offset: {x: 0.004583955, y: -0.03589642}
+  m_Size: {x: 0.1838944, y: 0.3748014}
   m_Direction: 0
 --- !u!212 &233359214
 SpriteRenderer:
@@ -283,6 +284,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &233359217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233359209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54f425025be8a543a51765a3c797a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scenes: 00000000
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
